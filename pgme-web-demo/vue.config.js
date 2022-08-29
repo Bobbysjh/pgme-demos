@@ -20,6 +20,11 @@ module.exports = {
   publicPath: './',
   devServer: {},
   outputDir: 'dist',
+  pages:{
+    index:{
+      entry:'./index.ts',
+    },
+  },
   chainWebpack: (config) => {
     config.module
       .rule('images')
